@@ -1,0 +1,9 @@
+name: cantera
+channels:
+  - cantera
+dependencies:
+  - numpy
+  - cantera
+  - matplotlib
+  - pandas
+  
