@@ -1,4 +1,4 @@
-name: cantera
+name: me362b
 channels:
   - cantera
 dependencies:
@@ -6,4 +6,6 @@ dependencies:
   - cantera
   - matplotlib
   - pandas
+  - jupyter
+  - ipykernel
   
