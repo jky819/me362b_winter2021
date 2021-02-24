@@ -12,7 +12,7 @@ Use _File > Print Preview_, then _Print_ the preview as a .PDF file.
 
 Open a _Binder_ session and navigate to the repository view:
 
-* Option 1: Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ajsusa/me362b_winter2021/a9fbe0266c568b5cbe282848c2265c965fcc5716), then open the _notebooks_ folder
+* Option 1: Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ajsusa/me362b_winter2021/602b07cd40f984396f5634f443f8dfba903447a6), then open the _notebooks_ folder
 * Option 2: Use the _Launch Binder_ link from the Problem Set assignment to open the problem set 5 template, then click _File > Open_
 
 In the upper-right corner, click _Upload_, then navigate to and select your file.
