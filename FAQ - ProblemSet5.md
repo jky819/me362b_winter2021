@@ -1,3 +1,27 @@
+# Bugs and Errors: Problem Set 5
+
+## 1. In _Part 2_, which definition of IDT should I use?
+
+The answer shouldn't matter much on the definition selected. I would recommend using 'T' just to be consistent with what is asked for in later questions.
+
+## 2. My ignition delay times/sensitivity results do not agree at all between mechanisms? Is this right?
+
+No, they should be agreeing pretty closely (within ~50%). If they are not, and especially if you are getting IDT values on the order of 1e-11, make sure you have implemented the bug fixes called out in the announcement on Canvas posted Feb. 24. 
+
+## 3. In _Part 3_, my "most-negative reactions" don't agree between mechanisms. Am I doing something wrong?
+
+No, I misread my own sensitivity plots when writing the problem. Sorry!
+
+You may either ignore the part stating the reactions should be the same and characterize all the reactions that appear as the most-negatively sensitive for any mechanism, or you may consider the reaction "CH3 + HO2 <-> CH3O + OH" as the most negatively sensitive (which should be the case for 2 of the 3 mechanisms).
+
+## 4. In _Part 4_, I get a Cantera error: Unknown Species 'C3H8'
+
+There was an error in the problem statement in earlier versions of the Problem Set template; please use __methane__ as the fuel in part 4, as in the prior parts of the assignment.
+
+The error is raised because the reaction mechanisms do not contain propane as a species.
+
+*********
+
 # Frequently Asked Questions: Problem Set 5
 
 ## 1. How do I save my work in _Binder_?
@@ -36,24 +60,3 @@ To run your notebook on your local computer, you would need:
 
 None of this is particularly difficult, but it introduced a good bit of extra time, a number of extra steps,
 and the need to install software that can all be avoided by using the preconfigured _Binder_ environment. 
-
-
-## 4. In _Part 2_, which definition of IDT should I use?
-
-The answer shouldn't matter much on the definition selected. I would recommend using 'T' just to be consistent with what is asked for in later questions.
-
-## 5. My ignition delay times/sensitivity results do not agree at all between mechanisms? Is this right?
-
-No, they should be agreeing pretty closely (within ~50%). If they are not, and especially if you are getting IDT values on the order of 1e-11, make sure you have implemented the bug fixes called out in the announcement on Canvas posted Feb. 24. 
-
-## 6. In _Part 3_, my "most-negative reactions" don't agree between mechanisms. Am I doing something wrong?
-
-No, I misread my own sensitivity plots when writing the problem. Sorry!
-
-You may either ignore the part stating the reactions should be the same and characterize all the reactions that appear as the most-negatively sensitive for any mechanism, or you may consider the reaction "CH3 + HO2 <-> CH3O + OH" as the most negatively sensitive (which should be the case for 2 of the 3 mechanisms).
-
-## 7. In _Part 4_, I get a Cantera error: Unknown Species 'C3H8'
-
-There was an error in the problem statement in earlier versions of the Problem Set template; please use __methane__ as the fuel in part 4, as in the prior parts of the assignment.
-
-The error is raised because the reaction mechanisms do not contain propane as a species.
