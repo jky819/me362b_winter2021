@@ -36,3 +36,9 @@ To run your notebook on your local computer, you would need:
 
 None of this is particularly difficult, but it introduced a good bit of extra time, a number of extra steps,
 and the need to install software that can all be avoided by using the preconfigured _Binder_ environment. 
+
+## 4. In _Part 4_, I get a Cantera error: Unknown Species 'C3H8'
+
+There was an error in the problem statement in earlier versions of the Problem Set template; please use __methane__ as the fuel in part 4, as in the prior parts of the assignment.
+
+The error is raised because the reaction mechanisms do not contain propane as a species.
