@@ -12,7 +12,7 @@ __2. How do I load my work to continue working?__
 
 Open a _Binder_ session and navigate to the repository view:
 
-* Option 1: Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke2.mybinder.org/user/ajsusa-me362b_winter2021-9zsw8kh4/tree/notebooks)
+* Option 1: Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ajsusa/me362b_winter2021/a9fbe0266c568b5cbe282848c2265c965fcc5716)
 * Option 2: Use the _Launch Binder_ link from the Problem Set assignment to open the problem set 5 template, then click _File > Open_
 
 __3. Can I run my notebook locally on my local computer, instead of through _Binder_?__
