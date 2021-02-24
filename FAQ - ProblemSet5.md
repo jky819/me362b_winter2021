@@ -12,8 +12,16 @@ __2. How do I load my work to continue working?__
 
 Open a _Binder_ session and navigate to the repository view:
 
-* Option 1: Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ajsusa/me362b_winter2021/a9fbe0266c568b5cbe282848c2265c965fcc5716)
+* Option 1: Click here: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ajsusa/me362b_winter2021/a9fbe0266c568b5cbe282848c2265c965fcc5716), then open the _notebooks_ folder
 * Option 2: Use the _Launch Binder_ link from the Problem Set assignment to open the problem set 5 template, then click _File > Open_
+
+In the upper-right corner, click _Upload_, then navigate to and select your file.
+
+Rename your file for upload if needed, then click the _Upload_ button in line with your file.
+
+Click the file to open it in the interactive session.
+
+**_Note:_** you have to upload your file into the _notebooks_ directory, else the filepaths to the mechanism files will break 
 
 __3. Can I run my notebook locally on my local computer, instead of through _Binder_?__
 
