@@ -1,6 +1,6 @@
 # Frequently Asked Questions: Problem Set 5
 
-__1. How do I save my work in _Binder_?__
+## 1. How do I save my work in _Binder_?
 
 a. As a Jupyter notebook to continue working on later:
 Use _File > Download as > Notebook (.ipynb)_ to save a copy of your modified notebook in its current state.
@@ -8,7 +8,7 @@ Use _File > Download as > Notebook (.ipynb)_ to save a copy of your modified not
 b. As a PDF for submission: 
 Use _File > Print Preview_, then _Print_ the preview as a .PDF file.
 
-__2. How do I load my work to continue working?__
+## 2. How do I load my work to continue working?
 
 Open a _Binder_ session and navigate to the repository view:
 
@@ -23,7 +23,7 @@ Click the file to open it in the interactive session.
 
 **_Note:_** you have to upload your file into the _notebooks_ directory, else the filepaths to the mechanism files will break 
 
-__3. Can I run my notebook locally on my local computer, instead of through _Binder_?__
+## 3. Can I run my notebook locally on my local computer, instead of through _Binder_?
 
 Yes you can, but for the sake of this assignment, it's not recommended or worth the effort.
 
