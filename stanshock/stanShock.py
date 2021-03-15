@@ -23,6 +23,7 @@ import numpy as np
 from numba import double, jit
 import cantera as ct
 import matplotlib.pyplot as plt
+plt.rc('text', usetex=False)
 from scipy.optimize import root
 from scipy.optimize import newton
 
@@ -900,22 +901,30 @@ class stanShock(object):
             self.XTDiagram_variableMatrix = variableMatrix
             self.XTDiagram_X = X
             self.XTDiagram_T = T
+        # TODO: Figure out how to use latex with binder!
         if variable in ["density","r","rho"]:
-            plt.title("$\\rho\ [\mathrm{kg/m^3}]$")
+            #plt.title("$\\rho\ [\mathrm{kg/m^3}]$")
+            plt.title("rho (kg/m^3)")
         elif variable in ["velocity","u"]:
-            plt.title("$u\ [\mathrm{m/s}]$")
+            #plt.title("$u\ [\mathrm{m/s}]$")
+            plt.title("u (m/s)")
         elif variable in ["pressure","p"]:
             variableMatrix /= 1.0e5 #convert to bar
-            plt.title("$p\ [\mathrm{bar}]$")
+            #plt.title("$p\ [\mathrm{bar}]$")
+            plt.title("p (bar)")
         elif variable in ["temperature","t"]:
-            plt.title("$T\ [\mathrm{K}]$")
+            #plt.title("$T\ [\mathrm{K}]$")
+            plt.title("T (K)")
         elif variable in ["gamma","g","specific heat ratio", "heat capacity ratio"]:
-            plt.title("$\gamma$")
-        else: plt.title("$\mathrm{"+variable+"}$")
+            #plt.title("$\gamma$")
+            plt.title("gamma")
+        else: plt.title("Other variables")#plt.title("$\mathrm{"+variable+"}$")
         if limits is None: plt.pcolormesh(X,T,variableMatrix,cmap='jet')
         else: plt.pcolormesh(X,T,variableMatrix,cmap='jet',vmin=limits[0],vmax=limits[1])
-        plt.xlabel("$x\ [\mathrm{m}]$")
-        plt.ylabel("$t\ [\mathrm{ms}]$")
+        #plt.xlabel("$x\ [\mathrm{m}]$")
+        #plt.ylabel("$t\ [\mathrm{ms}]$")
+        plt.xlabel("x(m)")
+        plt.ylabel("t(ms)")
         plt.axis([min(XTDiagram.x), max(XTDiagram.x), min(t), max(t)])
         plt.colorbar()
 ##############################################################################
