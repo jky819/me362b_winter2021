@@ -10,7 +10,4 @@ dependencies:
   - ipykernel
   - scipy
   - numba
-  - latex
-  - PyDvi
-  - ghostscript
   
