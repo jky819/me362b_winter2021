@@ -8,4 +8,6 @@ dependencies:
   - pandas
   - jupyter
   - ipykernel
+  - scipy
+  - numba
   
