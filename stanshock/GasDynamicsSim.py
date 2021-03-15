@@ -12,6 +12,7 @@ from stanShock import dSFdx, stanShock, smoothingFunction
 import numpy as np
 import matplotlib as mpl
 from matplotlib import pyplot as plt
+plt.rc('text', usetex=False)
 import time
 import cantera as ct
 from scipy.optimize import newton
@@ -118,14 +119,18 @@ class ShockSim:
         if self.plot:
             plt.figure()
             plt.plot(tNoInsert / 1e-3, pNoInsert / 1e5, 'b')  # label="$\mathrm{No\ Insert}$")
-            plt.xlabel("$t\ [\mathrm{ms}]$")
-            plt.ylabel("$p\ [\mathrm{bar}]$")
-            plt.tight_layout()
+            #plt.xlabel("$t\ [\mathrm{ms}]$")
+            #plt.ylabel("$p\ [\mathrm{bar}]$")
+            plt.xlabel("t(ms)")
+            plt.ylabel("p(bar)")
+            #plt.tight_layout()
             plt.figure()
             plt.plot(tNoInsert / 1e-3, TNoInsert, 'r')  # label="$\mathrm{No\ Insert}$")
-            plt.xlabel("$t\ [\mathrm{ms}]$")
-            plt.ylabel("$T\ [\mathrm{K}]$")
-            plt.tight_layout()
+            #plt.xlabel("$t\ [\mathrm{ms}]$")
+            #plt.ylabel("$T\ [\mathrm{K}]$")
+            #plt.tight_layout()
+            plt.xlabel("t(ms)")
+            plt.ylabel("T(K)")
         self.tNoInsert = tNoInsert
         self.pNoInsert = pNoInsert
         self.TNoInsert = TNoInsert
@@ -271,14 +276,19 @@ class ShockSim:
         if self.plot:
             plt.figure()
             plt.plot(tNoInsert / 1e-3, pNoInsert / 1e5, 'b') #label="$\mathrm{No\ Insert}$")
-            plt.xlabel("$t\ [\mathrm{ms}]$")
-            plt.ylabel("$p\ [\mathrm{bar}]$")
-            plt.tight_layout()
+            #plt.xlabel("$t\ [\mathrm{ms}]$")
+            #plt.ylabel("$p\ [\mathrm{bar}]$")
+            #plt.tight_layout()
+
+            plt.xlabel("t(ms)")
+            plt.ylabel("p(bar)")
             plt.figure()
             plt.plot(tNoInsert / 1e-3, TNoInsert, 'r') #label="$\mathrm{No\ Insert}$")
-            plt.xlabel("$t\ [\mathrm{ms}]$")
-            plt.ylabel("$T\ [\mathrm{K}]$")
-            plt.tight_layout()
+            #plt.xlabel("$t\ [\mathrm{ms}]$")
+            #plt.ylabel("$T\ [\mathrm{K}]$")
+            #plt.tight_layout()
+            plt.xlabel("t(ms)")
+            plt.ylabel("T(K)")
         self.tNoInsert = tNoInsert
         self.pNoInsert = pNoInsert
         self.TNoInsert = TNoInsert
